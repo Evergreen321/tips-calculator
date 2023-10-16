@@ -2,19 +2,40 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  background-color: #d3d3d3;
+}
+
+.title {
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.title span {
+  color: #ff7f50;
 }
 
 .app {
-  margin: 50px;
-  border-radius: 10px;
-  background-color: #2db0da;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 25px 50px 25px 50px;
+  border-radius: 20px;
+  background-color: #5f9ea0;
+  color: #fff;
+  height: 100%;
+  width: 40%;
 }
 
 .form {
   display: flex;
+  gap: 5px;
   align-items: center;
+  justify-content: flex-start;
+}
 
-  margin: 0px 50px 0px 50px;
+.form input {
+  color: #111;
+  border: 1px solid #767676;
+  font-size: 16px;
 }
 
 .bill input {
@@ -22,13 +43,27 @@ body {
   margin-left: 4px;
 }
 
+.total {
+  border: 1px solid #767676;
+  background-color: #fff;
+  color: #111;
+  padding: 0 20px 0 20px;
+}
+
 .text {
-  margin: 40px 50px 0px 50px;
   color: #333;
   font-style: italic;
 }
 
 .btn {
   padding: 10px 20px;
-  margin: 40px 50px 20px 50px;
+  border-radius: 5px;
+  background-color: #ff7f50;
+  color: #fff;
+  border: 1px solid #767676;
+}
+
+.btn:active {
+  background-color: #767676;
+  font-weight: 700;
 }
