@@ -6,7 +6,7 @@ export default function SelectPercentage({
   children,
 }) {
   return (
-    <form className="form">
+    <div className="form">
       <h3>{children}</h3>
       <select
         value={servicePercentage}
@@ -17,6 +17,6 @@ export default function SelectPercentage({
         <option value="10">It was good (10%)</option>
         <option value="20">Absolutely amazing (20%)</option>
       </select>
-    </form>
+    </div>
   );
 }

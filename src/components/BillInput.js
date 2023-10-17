@@ -2,7 +2,7 @@ import React from "react";
 
 export default function BillInput({ bill, onSetBill }) {
   return (
-    <form className="form">
+    <div className="form">
       <h3>Bill amount: </h3>
 
       <input
@@ -11,6 +11,6 @@ export default function BillInput({ bill, onSetBill }) {
         value={bill}
         onChange={(e) => onSetBill(Number(e.target.value))}
       />
-    </form>
+    </div>
   );
 }

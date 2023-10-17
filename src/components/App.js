@@ -27,13 +27,15 @@ export default function App() {
       </h1>
 
       <div className="app">
-        <BillInput bill={bill} onSetBill={setBill} />
-        <SelectPercentage
-          servicePercentage={servicePercentage1}
-          onSetServicePercentage={setServicePercentage1}
-        >
-          How did you like the service?
-        </SelectPercentage>
+        <form>
+          <BillInput bill={bill} onSetBill={setBill} />
+          <SelectPercentage
+            servicePercentage={servicePercentage1}
+            onSetServicePercentage={setServicePercentage1}
+          >
+            Tip percentage:
+          </SelectPercentage>
+        </form>
         {/* <p>Set alone</p> */}
         {/* <SelectPercentage
           servicePercentage={servicePercentage2}
